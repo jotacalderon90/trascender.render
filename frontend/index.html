@@ -1,0 +1,22 @@
+<!--use:main-->
+
+<!--define:title-->
+Hello, world!
+<!--/define:title-->
+
+<!--define:main-->
+	<h1 class="display-4">{{data:doc.title}}</h1>
+	<p class="lead">{{data:doc.p}}</p>
+	<hr class="my-4">
+	<a class="btn btn-primary btn-lg" href="{{data:doc.a}}" role="button">Revisa más información aquí</a>
+	<!--if:doc.if-->
+	<hr>
+	<h2>Este parrafo se muestra de manera condicional</h2>
+	<!--/if-->
+	<p>La siguiente lista se repite mediante un control repeat</p>
+	<ul>
+	<!--repeat:doc.repeat-->
+		<li>{{data:doc.repeat[index]}}</li>
+	<!--/repeat:doc.repeat-->
+	</ul>
+<!--/define:main-->
