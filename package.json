@@ -1,5 +1,5 @@
 {
-  "name": "@jotace.cl/trascender.render",
+  "name": "trascender.render",
   "description": "Motor de plantillas para expressjs",
   "version": "0.0.1",
   "dependencies": {
